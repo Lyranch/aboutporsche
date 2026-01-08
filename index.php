@@ -298,120 +298,154 @@ include "koneksi.php";
      </section>
     <!-- gallery end -->
     <!-- Schedule begin -->
-<section id="schedule" class="text-center p-5 bg-white">
-      <h2 class="text-center mb-4 fw-bold">Schedule</h2>
+    <section id="schedule" class="text-center p-5 bg-white">
+      <h2 class="text-center mb-4 fw-bold">Porsche Schedule</h2>
 
       <div class="container">
         <div class="row g-4 justify-content-center">
+
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card h-100 shadow-sm">
-              <h2 class="text-danger mt-3"><i class="bi bi-book"></i></h2>
+              <h2 class="text-danger mt-3"><i class="bi bi-speedometer2"></i></h2>
               <div class="card-body">
-                <h5 class="card-title">Membaca</h5>
-                <p class="card-text">Menambah wawasan setiap pagi sebelum beraktivitas</p>
+                <h5 class="card-title">Test Drive</h5>
+                <p class="card-text">
+                  Menjadwalkan sesi test drive untuk merasakan performa Porsche secara langsung
+                </p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card h-100 shadow-sm">
-              <h2 class="text-danger mt-3"><i class="bi bi-laptop"></i></h2>
+              <h2 class="text-danger mt-3"><i class="bi bi-gear-wide-connected"></i></h2>
               <div class="card-body">
-                <h5 class="card-title">Menulis</h5>
-                <p class="card-text">Mencatat setiap pengalaman harian di jurnal pribadi</p>
+                <h5 class="card-title">Service & Maintenance</h5>
+                <p class="card-text">
+                  Perawatan berkala untuk menjaga performa mesin tetap optimal
+                </p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card h-100 shadow-sm">
-              <h2 class="text-danger mt-3"><i class="bi bi-people-fill"></i></h2>
+              <h2 class="text-danger mt-3"><i class="bi bi-calendar-event"></i></h2>
               <div class="card-body">
-                <h5 class="card-title">Diskusi</h5>
-                <p class="card-text">Bertukar ide dengan teman dalam kelompok belajar</p>
+                <h5 class="card-title">Porsche Event</h5>
+                <p class="card-text">
+                  Menghadiri pameran, gathering, dan event resmi Porsche
+                </p>
               </div>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="card h-100 shadow-sm">
-              <h2 class="text-danger mt-3"><i class="bi bi-bicycle"></i></h2>
+              <h2 class="text-danger mt-3"><i class="bi bi-trophy"></i></h2>
               <div class="card-body">
-                <h5 class="card-title">Olahraga</h5>
-                <p class="card-text">Menjaga kesehatan dengan bersepeda sore hari</p>
+                <h5 class="card-title">Motorsport</h5>
+                <p class="card-text">
+                  Mengikuti jadwal balap dan aktivitas motorsport Porsche
+                </p>
               </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row g-4 justify-content-center mt-3">
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100 shadow-sm">
+              <h2 class="text-danger mt-3"><i class="bi bi-camera"></i></h2>
+              <div class="card-body">
+                <h5 class="card-title">Photo Session</h5>
+                <p class="card-text">
+                  Dokumentasi desain dan detail ikonik mobil Porsche
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card h-100 shadow-sm">
+              <h2 class="text-danger mt-3"><i class="bi bi-journal-text"></i></h2>
+              <div class="card-body">
+                <h5 class="card-title">Article Update</h5>
+                <p class="card-text">
+                  Update artikel terbaru seputar teknologi dan sejarah Porsche
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- Schedule end -->
+
+    <!-- Accordion begin -->
+    <section id="accordion" class="text-center p-5 bg-black text-white">
+      <h2>Porsche Racing History</h2>
+
+      <div class="accordion" id="accordionExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button bg-danger bg-gradient text-white" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+              Le Mans 24 Hours
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Porsche merupakan pabrikan tersukses di ajang <strong>24 Hours of Le Mans</strong>
+              dengan lebih dari <strong>19 kemenangan overall</strong>. Dominasi ini dimulai
+              sejak tahun 1970 melalui Porsche 917 hingga era modern hypercar.
             </div>
           </div>
         </div>
 
-        <div class="row g-4 justify-content-between mt-3">
-<div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card h-100 shadow-sm">
-              <h2 class="text-danger mt-3"><i class="bi bi-film"></i></h2>
-              <div class="card-body">
-                <h5 class="card-title">Movie</h5>
-                <p class="card-text">Menonton film yang bagus di bioskop</p>
-              </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed bg-danger bg-gradient text-white" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Formula E & Endurance
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Porsche mencatatkan kesuksesan besar di ajang <strong>Formula E</strong> dan
+              kejuaraan <strong>World Endurance Championship (WEC)</strong>, menegaskan
+              komitmen pada teknologi hybrid dan elektrifikasi performa tinggi.
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-6 col-sm-12">
-            <div class="card h-100 shadow-sm ms-auto">
-              <h2 class="text-danger mt-3"><i class="bi bi-bag"></i></h2>
-              <div class="card-body">
-                <h5 class="card-title">Belanja</h5>
-                <p class="card-text">Membeli kebutuhan bulanan di supermarket</p>
-              </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed bg-danger bg-gradient text-white" type="button"
+              data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Motorsport GT & Carrera Cup
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Melalui <strong>Porsche 911 GT3</strong> dan <strong>Carrera Cup</strong>,
+              Porsche mendominasi balap GT di seluruh dunia dan menjadi standar
+              bagi mobil balap customer racing.
             </div>
           </div>
         </div>
 
       </div>
     </section>
-    <!-- Schedule end -->
-    <!--Accordion begin-->
-    <section id="accordion" class="text-center p-5 bg-black text-white">
-      <h2>About Me</h2>
-      <div class="accordion" id="accordionExample">
-  <div class="accordion-item ">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button bg-danger bg-gradient text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        Universitas Dian Nuswantoro
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed bg-danger bg-gradient text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        SMA N 1 Cepiring
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed bg-danger bg-gradient text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        SMP N 3 Patebon
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-    <!--Accordion end-->
+    <!-- Accordion end -->
+
     <!-- footer begin -->
     <footer class="text-center p-5">
       <div>
