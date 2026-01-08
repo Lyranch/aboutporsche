@@ -38,105 +38,130 @@ include "koneksi.php";
     background-color: #1a1a1a;
   }
 
-  .dark-theme .accordion-button {
-    background-color: #333;
-    color: white;
+  .porsche-history {
+    background-color: #000;
+    color: #f1f1f1;
   }
 
-  .dark-theme .accordion-body {
-    background-color: #222;
-    color: white;
+  .porsche-history h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: bold;
   }
 
+  .porsche-history .accordion-item {
+    background-color: #121212;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
 
-.dark-theme #schedule,
-.dark-theme section#schedule.bg-white {
-  background-color: #1f1f1f !important;
-  color: #eaeaea !important;
-}
+  .porsche-history .accordion-button {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-weight: 600;
+  }
 
-.dark-theme #schedule .card {
-  background-color: #121212 !important;
-  color: #eaeaea !important;
-  border-color: rgba(255,255,255,0.06) !important;
-}
+  .porsche-history .accordion-button:not(.collapsed) {
+    background-color: #b30000;
+    color: #ffffff;
+  }
 
-.dark-theme #schedule .text-danger {
-  color: #ff6b6b !important; 
-}
+  .porsche-history .accordion-button::after {
+    filter: invert(1);
+  }
 
-.dark-theme .bi {
-  color: inherit;
-}
+  .porsche-history .accordion-body {
+    background-color: #0f0f0f;
+    color: #dcdcdc;
+  }
 
-.dark-theme .card {
-  background-color: #121212;
-  color: #e6e6e6;
-  border: 1px solid rgba(255,255,255,0.06);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.45);
-}
+  .dark-theme #schedule,
+  .dark-theme section#schedule.bg-white {
+    background-color: #1f1f1f !important;
+    color: #eaeaea !important;
+  }
 
-.dark-theme .card .card-footer,
-.dark-theme .card .card-footer small {
-  background: transparent;
-  color: #cfcfcf;
-  border-top: 1px solid rgba(255,255,255,0.04);
-}
+  .dark-theme #schedule .card {
+    background-color: #121212 !important;
+    color: #eaeaea !important;
+    border-color: rgba(255,255,255,0.06) !important;
+  }
 
-.dark-theme .card .card-title,
-.dark-theme .card .card-body,
-.dark-theme .card .card-text {
-  color: inherit;
-}
+  .dark-theme #schedule .text-danger {
+    color: #ff6b6b !important; 
+  }
 
-.dark-theme .card a.text-dark {
-  color: #f1f1f1 !important;
-  text-decoration: none;
-}
+  .dark-theme .bi {
+    color: inherit;
+  }
 
-.dark-theme .text-body-secondary {
-  color: #bdbdbd !important;
-}
+  .dark-theme .card {
+    background-color: #121212;
+    color: #e6e6e6;
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.45);
+  }
 
-.dark-theme #schedule .bi {
-  color: #ffb4b4;
-}
+  .dark-theme .card .card-footer,
+  .dark-theme .card .card-footer small {
+    background: transparent;
+    color: #cfcfcf;
+    border-top: 1px solid rgba(255,255,255,0.04);
+  }
 
-.dark-theme .text-dark {
-  color: #f8f8f8 !important;
-}
-.dark-theme .bg-white {
-  background-color: transparent !important;
-}
-#tanggal, #jam {
-    color: white;
-}
+  .dark-theme .card .card-title,
+  .dark-theme .card .card-body,
+  .dark-theme .card .card-text {
+    color: inherit;
+  }
 
-.custom-navbar {
-  background-color: #f8f9fa;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
+  .dark-theme .card a.text-dark {
+    color: #f1f1f1 !important;
+    text-decoration: none;
+  }
 
-.dark-theme .custom-navbar {
-  background-color: #2b2b2b;
-}
+  .dark-theme .text-body-secondary {
+    color: #bdbdbd !important;
+  }
 
-.dark-theme .custom-navbar .nav-link,
-.dark-theme .custom-navbar .navbar-brand {
-  color: #e6e6e6 !important;
-}
+  .dark-theme #schedule .bi {
+    color: #ffb4b4;
+  }
 
-.dark-theme .custom-navbar .nav-link:hover {
-  color: #ffffff !important;
-}
+  .dark-theme .text-dark {
+    color: #f8f8f8 !important;
+  }
+  .dark-theme .bg-white {
+    background-color: transparent !important;
+  }
+  #tanggal, #jam {
+      color: white;
+  }
 
-.dark-theme .navbar-toggler {
-  border-color: rgba(255,255,255,0.3);
-}
+  .custom-navbar {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-.dark-theme .navbar-toggler-icon {
-  filter: invert(1);
-}
+  .dark-theme .custom-navbar {
+    background-color: #2b2b2b;
+  }
+
+  .dark-theme .custom-navbar .nav-link,
+  .dark-theme .custom-navbar .navbar-brand {
+    color: #e6e6e6 !important;
+  }
+
+  .dark-theme .custom-navbar .nav-link:hover {
+    color: #ffffff !important;
+  }
+
+  .dark-theme .navbar-toggler {
+    border-color: rgba(255,255,255,0.3);
+  }
+
+  .dark-theme .navbar-toggler-icon {
+    filter: invert(1);
+  }
 
   </style>
   </head>
@@ -385,66 +410,88 @@ include "koneksi.php";
     </section>
     <!-- Schedule end -->
 
-    <!-- Accordion begin -->
-    <section id="accordion" class="text-center p-5 bg-black text-white">
-      <h2>Porsche Racing History</h2>
+<!-- Porsche Racing History begin -->
+<section id="accordion" class="text-center p-5 porsche-history">
+  <h2>Porsche Racing History</h2>
 
-      <div class="accordion" id="accordionExample">
+  <div class="accordion container" id="accordionExample">
 
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button bg-danger bg-gradient text-white" type="button"
-              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
-              Le Mans 24 Hours
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Porsche merupakan pabrikan tersukses di ajang <strong>24 Hours of Le Mans</strong>
-              dengan lebih dari <strong>19 kemenangan overall</strong>. Dominasi ini dimulai
-              sejak tahun 1970 melalui Porsche 917 hingga era modern hypercar.
-            </div>
-          </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseOne">
+          Le Mans 24 Hours
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Porsche dikenal sebagai pabrikan paling sukses dalam sejarah ajang
+          <strong>24 Hours of Le Mans</strong>. Sejak kemenangan ikonik pertama pada
+          tahun 1970 menggunakan <strong>Porsche 917</strong>, Porsche terus
+          mendominasi balapan ketahanan ini melalui berbagai era teknologi.
+          Keberhasilan tersebut berlanjut dengan model legendaris seperti
+          <strong>936, 956, 962</strong>, hingga era modern melalui
+          <strong>919 Hybrid</strong> dan <strong>963 Hypercar</strong>.
+          Konsistensi Porsche di Le Mans mencerminkan filosofi motorsport mereka:
+          daya tahan, efisiensi, dan performa tinggi yang dapat diandalkan
+          selama 24 jam tanpa kompromi.
         </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed bg-danger bg-gradient text-white" type="button"
-              data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-              Formula E & Endurance
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Porsche mencatatkan kesuksesan besar di ajang <strong>Formula E</strong> dan
-              kejuaraan <strong>World Endurance Championship (WEC)</strong>, menegaskan
-              komitmen pada teknologi hybrid dan elektrifikasi performa tinggi.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed bg-danger bg-gradient text-white" type="button"
-              data-bs-toggle="collapse" data-bs-target="#collapseThree">
-              Motorsport GT & Carrera Cup
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Melalui <strong>Porsche 911 GT3</strong> dan <strong>Carrera Cup</strong>,
-              Porsche mendominasi balap GT di seluruh dunia dan menjadi standar
-              bagi mobil balap customer racing.
-            </div>
-          </div>
-        </div>
-
       </div>
-    </section>
-    <!-- Accordion end -->
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+          Formula E & WEC
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Porsche juga membuktikan dominasinya di era motorsport modern melalui
+          partisipasi aktif di <strong>Formula E</strong> dan
+          <strong>World Endurance Championship (WEC)</strong>.
+          Melalui Formula E, Porsche mengembangkan teknologi
+          <strong>motor listrik, manajemen energi, dan sistem regenerasi</strong>
+          yang kemudian diaplikasikan langsung ke mobil produksi seperti
+          <strong>Porsche Taycan</strong>.
+          Sementara di WEC, Porsche menunjukkan keunggulan rekayasa hybrid
+          yang memadukan efisiensi bahan bakar dengan performa ekstrem,
+          menjadikan motorsport sebagai laboratorium inovasi masa depan.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+          data-bs-toggle="collapse" data-bs-target="#collapseThree">
+          GT Racing & Carrera Cup
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Dalam dunia balap GT, Porsche telah menjadi tolok ukur global selama
+          puluhan tahun. Melalui platform <strong>Porsche 911 GT3</strong>,
+          pabrikan ini mendominasi berbagai kejuaraan GT internasional,
+          termasuk IMSA, Blancpain GT, dan Nürburgring 24 Hours.
+          Selain itu, <strong>Porsche Carrera Cup</strong> merupakan salah satu
+          kejuaraan one-make paling prestisius di dunia, yang telah melahirkan
+          banyak pembalap profesional.
+          Program customer racing Porsche menegaskan komitmen mereka untuk
+          menyediakan mobil balap kompetitif, andal, dan konsisten di lintasan
+          mana pun di dunia.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Porsche Racing History end -->
+
 
     <!-- footer begin -->
     <footer class="text-center p-5">
