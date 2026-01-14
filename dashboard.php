@@ -36,16 +36,27 @@ $jumlah_galeri = $hasil2->num_rows;
     <p class="fs-5 text-muted mb-1">Selamat Datang,</p>
     <h2 class="fw-bold text-danger mb-4"><?= $username ?></h2>
 
-    <!-- Foto Profil -->
-    <div class="mb-4">
-        <?php if (!empty($user['foto']) && file_exists("img/".$user['foto'])) { ?>
-            <img src="img/<?= $user['foto'] ?>"
-                 class="rounded-circle shadow"
-                 width="180"
-                 height="180"
-                 style="object-fit: cover;">
-        <?php } ?>
-    </div>
+<!-- Foto Profil -->
+<div class="mb-4 d-flex justify-content-center">
+    <?php 
+    if (!empty($user['foto']) && file_exists("img/".$user['foto'])) { 
+        // Jika user punya foto
+    ?>
+        <img src="img/<?= $user['foto'] ?>"
+             class="rounded-circle shadow"
+             width="180"
+             height="180"
+             style="object-fit: cover;">
+    <?php } else { 
+        // Jika user tidak punya foto, buat default seperti WhatsApp
+        $initial = strtoupper(substr($username, 0, 1)); // Ambil inisial username
+    ?>
+        <div class="rounded-circle shadow d-flex justify-content-center align-items-center"
+             style="width: 180px; height: 180px; background-color: #ddd; font-size: 80px; color: #555; line-height: 180px;">
+            <?= $initial ?>
+        </div>
+    <?php } ?>
+</div>
 
     <!-- Card Statistik -->
     <div class="row justify-content-center g-4 mt-3">
