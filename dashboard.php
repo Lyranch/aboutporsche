@@ -48,8 +48,8 @@ $jumlah_galeri = $hasil2->num_rows;
              height="180"
              style="object-fit: cover;">
     <?php } else { 
-        // Jika user tidak punya foto, buat default seperti WhatsApp
-        $initial = strtoupper(substr($username, 0, 1)); // Ambil inisial username
+        // Jika user tidak punya foto, maka akan menggunakan inisial username yang login
+        $initial = strtoupper(substr($username, 0, 1)); 
     ?>
         <div class="rounded-circle shadow d-flex justify-content-center align-items-center"
              style="width: 180px; height: 180px; background-color: #ddd; font-size: 80px; color: #555; line-height: 180px;">
