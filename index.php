@@ -290,37 +290,47 @@ include "koneksi.php";
       </section>
     <!-- article end-->
     <!-- gallery begin -->
-     
-     <section id="gallery" class="text-center p-5 bg-black text-white">
+    <section id="gallery" class="text-center p-5 bg-black text-white">
       <div class="container">
-          <h2>Gallery</h2>
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/taycan.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/spyder.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/BDAD5683C3A94CC6AA8EA7DDB944336A_EA25FD0FDC51455DB3B8B582B22BA830_911-turbo-s-exterior.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/gt3-rs.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-      </div>
+        <h2>Gallery</h2>
 
-     </section>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <?php
+            $sql = "SELECT * FROM galeri ORDER BY tanggal DESC";
+            $hasil = $conn->query($sql);
+            $active = "active";
+
+            while ($row = $hasil->fetch_assoc()) {
+            ?>
+              <div class="carousel-item <?= $active ?>">
+                <img 
+                  src="img/<?= $row['gambar'] ?>" 
+                  class="d-block w-100"
+                  alt="<?= htmlspecialchars($row['judul']) ?>"
+                >
+              </div>
+            <?php
+              $active = ""; // hanya item pertama yg active
+            }
+            ?>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button class="carousel-control-next" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+      </div>
+    </section>
     <!-- gallery end -->
     <!-- Schedule begin -->
     <section id="schedule" class="text-center p-5 bg-white">
