@@ -8,7 +8,7 @@
         </div>
         <div class="col-md-6">
             <div class="input-group">
-                <input type="text" id="search" class="form-control" placeholder="Cari Artikel...">
+                <input type="text" id="search" class="form-control" placeholder="Cari Gambar...">
                 <span class="input-group-text">
                     <i class="bi bi-search"></i>
                 </span>
